@@ -5,7 +5,6 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char letter;
@@ -18,7 +17,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
 
