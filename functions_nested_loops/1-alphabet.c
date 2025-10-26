@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * print_alphabet - prints the alphabet in lowercase
@@ -8,7 +7,7 @@
  */
 void print_alphabet(void)
 {
-char letter;
+	char letter;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
