@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @n: the integer input
+ * @n: the number to process
  *
  * Return: value of the last digit
  */
@@ -10,10 +10,11 @@ int print_last_digit(int n)
 {
 	int last;
 
-	if (n < 0)
-	n = -n;       /* On s'assure que le nombre est positif */
-	last = n % 10;    /* On récupère le dernier chiffre */
-	_putchar(last + '0'); /* On l'affiche */
-	return (last);
+	last = n % 10;      /* prend le reste de n / 10 */
+	if (last < 0)
+	last = -last;   /* rendre positif si négatif */
+
+	_putchar('0' + last);  /* afficher le chiffre */
+	return (last);          /* retourner le chiffre */
 }
 
