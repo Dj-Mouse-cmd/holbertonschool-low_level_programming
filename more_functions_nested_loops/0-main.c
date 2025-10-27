@@ -1,6 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * main - check the code for function _isupper
+ *
+ * Description: This program tests the _isupper function
+ * to verify if it correctly identifies uppercase characters.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char c;
